@@ -20,8 +20,27 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+    
+    // Create WhatsApp message with form data
+    const message = `Hi! I'm interested in your real estate support services.
+
+📋 Contact Details:
+• Name: ${formData.name || 'Not provided'}
+• Email: ${formData.email || 'Not provided'}
+• Phone: ${formData.phone || 'Not provided'}
+• Company: ${formData.company || 'Not provided'}
+• Service Interest: ${formData.service || 'Not specified'}
+
+💬 Message:
+${formData.message || 'No additional message'}
+
+I'd like to discuss how you can help grow my real estate business!`;
+
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(message);
+    
+    // Open WhatsApp with pre-filled message
+    window.open(`https://wa.me/14303074182?text=${encodedMessage}`, '_blank');
   };
 
   return (
@@ -74,7 +93,7 @@ const Contact = () => {
                 </p>
               </div>
               
-              <div className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="group">
                     <input
@@ -149,7 +168,7 @@ const Contact = () => {
                 </div>
                 
                 <button
-                  onClick={handleSubmit}
+                  type="submit" 
                   className="group w-full bg-gradient-to-r from-[#FF8C42] to-[#ff6b2b] text-white px-8 py-4 rounded-xl font-bold text-base sm:text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-[#FF8C42]/40 hover:scale-105 relative overflow-hidden shadow-xl"
                 >
                   <span className="relative z-10 flex items-center justify-center">
@@ -159,7 +178,7 @@ const Contact = () => {
                   </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-[#ff6b2b] to-[#FF8C42] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </button>
-              </div>
+              </form>
             </div>
           </div>
 
