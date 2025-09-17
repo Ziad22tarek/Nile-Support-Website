@@ -108,13 +108,18 @@ const About = () => {
 
             {/* Call to Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center lg:items-start mt-6 lg:mt-8">
-              <button className="w-full sm:w-auto group bg-gradient-to-r from-[#FF8C42] to-[#ff6b2b] text-white px-6 py-3 sm:px-8 sm:py-3 rounded-xl font-bold text-sm sm:text-base transition-all duration-300 hover:shadow-lg hover:shadow-[#FF8C42]/30 hover:scale-105 relative overflow-hidden">
+              <a 
+                href="https://wa.me/14303074182?text=Hi!%20I'm%20interested%20in%20your%20real%20estate%20support%20services.%20I'd%20like%20to%20get%20started%20and%20learn%20more%20about%20how%20you%20can%20help%20grow%20my%20business%20with%20cold%20calling,%20lead%20generation,%20and%20customer%20service%20solutions."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto group bg-gradient-to-r from-[#FF8C42] to-[#ff6b2b] text-white px-6 py-3 sm:px-8 sm:py-3 rounded-xl font-bold text-sm sm:text-base transition-all duration-300 hover:shadow-lg hover:shadow-[#FF8C42]/30 hover:scale-105 relative overflow-hidden inline-block"
+              >
                 <span className="relative z-10 flex items-center justify-center">
                   Get Started Today
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#ff6b2b] to-[#FF8C42] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </button>
+              </a>
               
              
             </div>
