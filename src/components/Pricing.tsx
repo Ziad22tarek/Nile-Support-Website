@@ -168,7 +168,7 @@ const Pricing = () => {
                     {/* Glow effect */}
                     <div className={`absolute -inset-1 bg-gradient-to-r ${plan.color} rounded-3xl blur opacity-0 group-hover:opacity-20 transition-opacity duration-500`}></div>
                     
-                    <div className="relative p-3 sm:p-4 lg:p-5">
+                    <div className="relative p-3 sm:p-4 lg:p-5 h-full flex flex-col">
                       {/* Icon and Header */}
                       <div className="text-center mb-2 sm:mb-3 lg:mb-4">
                         <div className={`w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 bg-gradient-to-r ${plan.color} rounded-3xl flex items-center justify-center mx-auto mb-2 sm:mb-3 group-hover:scale-110 transition-transform duration-300 shadow-xl`}>
@@ -190,7 +190,7 @@ const Pricing = () => {
                       </div>
                       
                       {/* Features */}
-                      <ul className="space-y-1 sm:space-y-2 mb-3 sm:mb-4 lg:mb-5">
+                      <ul className="space-y-1 sm:space-y-2 mb-3 sm:mb-4 lg:mb-5 flex-grow">
                         {plan.features.map((feature, featureIndex) => (
                           <li key={featureIndex} className="flex items-start">
                             <CheckCircle className="h-2 w-2 sm:h-3 sm:w-3 lg:h-4 lg:w-4 text-[#00D4AA] mr-2 flex-shrink-0 mt-0.5" />
@@ -200,7 +200,8 @@ const Pricing = () => {
                       </ul>
                       
                       {/* CTA Button */}
-                      <a 
+                      <div className="mt-auto">
+                        <a 
                         href={`https://wa.me/14303074182?text=Hi! I'm interested in the ${plan.name} plan (${plan.price}/agent/month). I'd like to learn more about your real estate support services.`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -211,7 +212,8 @@ const Pricing = () => {
                       }`}
                       >
                         Get Started
-                      </a>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
