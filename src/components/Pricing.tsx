@@ -200,13 +200,18 @@ const Pricing = () => {
                       </ul>
                       
                       {/* CTA Button */}
-                      <button className={`w-full py-2 sm:py-3 lg:py-4 px-2 sm:px-3 lg:px-4 rounded-2xl font-bold text-xs sm:text-sm lg:text-base transition-all duration-300 hover:scale-105 shadow-lg mt-auto ${
+                      <a 
+                        href={`https://wa.me/14303074182?text=Hi! I'm interested in the ${plan.name} plan (${plan.price}/agent/month). I'd like to learn more about your real estate support services.`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`w-full py-2 sm:py-3 lg:py-4 px-2 sm:px-3 lg:px-4 rounded-2xl font-bold text-xs sm:text-sm lg:text-base transition-all duration-300 hover:scale-105 shadow-lg mt-auto block text-center ${
                         plan.popular 
                           ? 'bg-gradient-to-r from-[#FF8C42] to-[#ff6b2b] text-white hover:shadow-xl hover:shadow-[#FF8C42]/40' 
                           : 'bg-gradient-to-r from-[#1B8A8A] to-[#00D4AA] text-white hover:shadow-xl hover:shadow-[#1B8A8A]/30'
-                      }`}>
+                      }`}
+                      >
                         Get Started
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
