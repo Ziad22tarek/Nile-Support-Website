@@ -164,24 +164,15 @@ I'd like to discuss how you can help grow my real estate business!`;
               <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6">Let's Connect</h3>
               
               <div className="space-y-4">
-                {[
-                  { icon: Mail, label: "Email", value: "info@nilesupport.com", color: "from-[#00D4AA] to-[#1B8A8A]" },
-                  { icon: Phone, label: "Phone", value: "+1 (319) 594-3897", color: "from-[#FF8C42] to-[#1B8A8A]" },
-                  { icon: Clock, label: "Hours", value: "Monday-Saturday, 9 AM-6 PM EST", color: "from-[#1B8A8A] to-[#2C5F7C]" }
-                ].map((item, index) => {
-                  const Icon = item.icon;
-                  return (
-                    <div key={index} className="group flex items-center p-4 rounded-2xl bg-white/15 backdrop-blur-md border border-white/30 hover:bg-white/20 transition-all duration-300">
-                      <div className={`w-12 h-12 bg-gradient-to-r ${item.color} rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-xl`}>
-                        <Icon className="h-6 w-6 text-white" />
-                      </div>
-                      <div>
-                        <p className="text-white/80 text-sm font-semibold mb-1">{item.label}</p>
-                        <p className="text-white text-base sm:text-lg font-bold">{item.value}</p>
-                      </div>
-                    </div>
-                  );
-                })}
+                <div className="group flex items-center p-4 rounded-2xl bg-white/15 backdrop-blur-md border border-white/30 hover:bg-white/20 transition-all duration-300">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#1B8A8A] to-[#2C5F7C] rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-xl">
+                    <Clock className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-white/80 text-sm font-semibold mb-1">Hours</p>
+                    <p className="text-white text-base sm:text-lg font-bold">Monday-Saturday, 9 AM-6 PM EST</p>
+                  </div>
+                </div>
               </div>
             </div>
 
