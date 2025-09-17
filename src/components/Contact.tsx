@@ -20,8 +20,27 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+    
+    // Create WhatsApp message with form data
+    const message = `Hi! I'm interested in your real estate support services.
+
+📋 Contact Details:
+• Name: ${formData.name || 'Not provided'}
+• Email: ${formData.email || 'Not provided'}
+• Phone: ${formData.phone || 'Not provided'}
+• Company: ${formData.company || 'Not provided'}
+• Service Interest: ${formData.service || 'Not specified'}
+
+💬 Message:
+${formData.message || 'No additional message'}
+
+I'd like to discuss how you can help grow my real estate business!`;
+
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(message);
+    
+    // Open WhatsApp with pre-filled message
+    window.open(`https://wa.me/14303074182?text=${encodedMessage}`, '_blank');
   };
 
   return (
@@ -74,51 +93,27 @@ const Contact = () => {
                 </p>
               </div>
               
-              <div className="space-y-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="group">
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Full Name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[#00D4AA] focus:bg-white/20 transition-all duration-300 group-hover:border-white/50 text-sm sm:text-base font-medium"
-                    />
-                  </div>
-                  <div className="group">
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Email Address"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[#A4D65E] focus:bg-white/20 transition-all duration-300 group-hover:border-white/50 text-sm sm:text-base font-medium"
-                    />
-                  </div>
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div className="group">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[#00D4AA] focus:bg-white/20 transition-all duration-300 group-hover:border-white/50 text-sm sm:text-base font-medium"
+                  />
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="group">
-                    <input
-                      type="tel"
-                      name="phone"
-                      placeholder="Phone Number"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[#00D4AA] focus:bg-white/20 transition-all duration-300 group-hover:border-white/50 text-sm sm:text-base font-medium"
-                    />
-                  </div>
-                  <div className="group">
-                    <input
-                      type="text"
-                      name="company"
-                      placeholder="Company Name"
-                      value={formData.company}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[#00D4AA] focus:bg-white/20 transition-all duration-300 group-hover:border-white/50 text-sm sm:text-base font-medium"
-                    />
-                  </div>
+                <div className="group">
+                  <input
+                    type="text"
+                    name="company"
+                    placeholder="Company Name"
+                    value={formData.company}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[#00D4AA] focus:bg-white/20 transition-all duration-300 group-hover:border-white/50 text-sm sm:text-base font-medium"
+                  />
                 </div>
                 
                 <div className="group">
@@ -149,7 +144,7 @@ const Contact = () => {
                 </div>
                 
                 <button
-                  onClick={handleSubmit}
+                  type="submit" 
                   className="group w-full bg-gradient-to-r from-[#FF8C42] to-[#ff6b2b] text-white px-8 py-4 rounded-xl font-bold text-base sm:text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-[#FF8C42]/40 hover:scale-105 relative overflow-hidden shadow-xl"
                 >
                   <span className="relative z-10 flex items-center justify-center">
@@ -159,34 +154,25 @@ const Contact = () => {
                   </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-[#ff6b2b] to-[#FF8C42] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </button>
-              </div>
+              </form>
             </div>
           </div>
 
           {/* Contact Information */}
           <div className="w-full space-y-6">
             <div>
-              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6">Contact Information</h3>
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6">Let's Connect</h3>
               
               <div className="space-y-4">
-                {[
-                  { icon: Mail, label: "Email", value: "info@nilesupport.com", color: "from-[#00D4AA] to-[#1B8A8A]" },
-                  { icon: Phone, label: "Phone", value: "+1 (319) 594-3897", color: "from-[#FF8C42] to-[#1B8A8A]" },
-                  { icon: Clock, label: "Hours", value: "Monday-Saturday, 9 AM-6 PM EST", color: "from-[#1B8A8A] to-[#2C5F7C]" }
-                ].map((item, index) => {
-                  const Icon = item.icon;
-                  return (
-                    <div key={index} className="group flex items-center p-4 rounded-2xl bg-white/15 backdrop-blur-md border border-white/30 hover:bg-white/20 transition-all duration-300">
-                      <div className={`w-12 h-12 bg-gradient-to-r ${item.color} rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-xl`}>
-                        <Icon className="h-6 w-6 text-white" />
-                      </div>
-                      <div>
-                        <p className="text-white/80 text-sm font-semibold mb-1">{item.label}</p>
-                        <p className="text-white text-base sm:text-lg font-bold">{item.value}</p>
-                      </div>
-                    </div>
-                  );
-                })}
+                <div className="group flex items-center p-4 rounded-2xl bg-white/15 backdrop-blur-md border border-white/30 hover:bg-white/20 transition-all duration-300">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#1B8A8A] to-[#2C5F7C] rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-xl">
+                    <Clock className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-white/80 text-sm font-semibold mb-1">Hours</p>
+                    <p className="text-white text-base sm:text-lg font-bold">Monday-Saturday, 9 AM-6 PM EST</p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -201,21 +187,26 @@ const Contact = () => {
               </p>
               
               <div className="space-y-3">
-                <button className="group w-full bg-gradient-to-r from-[#1B8A8A] to-[#00D4AA] text-white px-6 py-3 rounded-xl font-bold text-base transition-all duration-300 hover:shadow-xl hover:shadow-[#1B8A8A]/40 hover:scale-105 flex items-center justify-center shadow-lg">
+                <a 
+                  href="https://calendly.com/muhammad-nassef-nilesupport/30min?month=2025-09"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group w-full bg-gradient-to-r from-[#1B8A8A] to-[#00D4AA] text-white px-6 py-3 rounded-xl font-bold text-base transition-all duration-300 hover:shadow-xl hover:shadow-[#1B8A8A]/40 hover:scale-105 flex items-center justify-center shadow-lg"
+                >
                   <span className="flex items-center">
                     Schedule a Call
                     <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                   </span>
-                </button>
+                </a>
                 
-                <button className="group w-full border-2 border-white/40 text-white px-6 py-3 rounded-xl font-bold text-base transition-all duration-300 hover:bg-white/15 hover:border-white/60 flex items-center justify-center shadow-lg">
+                {/* <button className="group w-full border-2 border-white/40 text-white px-6 py-3 rounded-xl font-bold text-base transition-all duration-300 hover:bg-white/15 hover:border-white/60 flex items-center justify-center shadow-lg">
                   <span className="flex items-center">
                     Download Brochure
                     <svg className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                   </span>
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

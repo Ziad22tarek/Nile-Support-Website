@@ -5,7 +5,7 @@ const Pricing = () => {
   const plans = [
     {
       name: "Starter",
-      price: "$8",
+      price: "$1220",
       subtitle: "Solo agents & small teams",
       features: [
         "1-2 agents",
@@ -21,7 +21,7 @@ const Pricing = () => {
     },
     {
       name: "Growth",
-      price: "$7.50",
+      price: "$1120",
       subtitle: "Expanding real estate teams",
       features: [
         "3-5 agents",
@@ -38,7 +38,7 @@ const Pricing = () => {
     },
     {
       name: "Scale",
-      price: "$7",
+      price: "$1080",
       subtitle: "Brokerages & high-volume campaigns",
       features: [
         "6-10 agents",
@@ -57,7 +57,7 @@ const Pricing = () => {
     },
     {
       name: "Enterprise",
-      price: "$6.50",
+      price: "$1020",
       subtitle: "Large real estate networks & multi-state operations",
       features: [
         "11+ agents",
@@ -87,7 +87,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section id="pricing" className="relative min-h-screen overflow-hidden flex items-center py-4 sm:py-6 lg:py-8">
+    <section id="pricing" className="relative overflow-hidden flex items-center py-4 sm:py-6 lg:py-8">
       {/* Background */}
       <div className="absolute inset-0">
         {/* Base gradient */}
@@ -109,21 +109,21 @@ const Pricing = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-3 sm:px-4 lg:px-6 xl:px-8 w-full">
         <div className="py-2 sm:py-3 lg:py-4">
           {/* Header */}
-          <div className="text-center mb-4 sm:mb-6 lg:mb-8">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-2 sm:mb-3 lg:mb-4 leading-tight">
+          <div className="text-center mb-3 sm:mb-4 lg:mb-5">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-1 sm:mb-2 lg:mb-3 leading-tight">
               Outsourced Real Estate
               <span className="block bg-gradient-to-r from-[#1B8A8A] to-[#00D4AA] bg-clip-text text-transparent">
                 Support Plans
               </span>
             </h2>
             
-            <p className="text-xs sm:text-sm lg:text-base xl:text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed mb-3 sm:mb-4 lg:mb-6 font-medium">
+            <p className="text-xs sm:text-sm lg:text-base xl:text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed mb-2 sm:mb-3 lg:mb-4 font-medium">
               We offer flexible, transparent plans based on your business size and needs.
             </p>
 
             {/* Included Features */}
-            <div className="bg-white/90 backdrop-blur-md rounded-3xl p-3 sm:p-4 lg:p-5 border border-gray-200 max-w-5xl mx-auto shadow-xl mb-4 sm:mb-6 lg:mb-8">
-              <h3 className="text-xs sm:text-sm lg:text-base xl:text-lg font-bold text-gray-900 mb-2 sm:mb-3 lg:mb-4">All plans include:</h3>
+            <div className="bg-white/90 backdrop-blur-md rounded-3xl p-3 sm:p-4 lg:p-5 border border-gray-200 max-w-5xl mx-auto shadow-xl mb-3 sm:mb-4 lg:mb-5">
+              <h3 className="text-xs sm:text-sm lg:text-base xl:text-lg font-bold text-gray-900 mb-1 sm:mb-2 lg:mb-3">All plans include:</h3>
               <div className="flex flex-wrap justify-center gap-1 sm:gap-2 lg:gap-3">
                 {includedFeatures.map((feature, index) => (
                   <div key={index} className="flex items-center bg-[#1B8A8A]/15 px-2 py-1 sm:px-3 sm:py-2 lg:px-4 lg:py-2 rounded-full border border-[#1B8A8A]/20">
@@ -136,7 +136,7 @@ const Pricing = () => {
           </div>
 
           {/* Pricing Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 lg:gap-4">
             {plans.map((plan, index) => {
               const Icon = plan.icon;
               return (
@@ -168,18 +168,29 @@ const Pricing = () => {
                     {/* Glow effect */}
                     <div className={`absolute -inset-1 bg-gradient-to-r ${plan.color} rounded-3xl blur opacity-0 group-hover:opacity-20 transition-opacity duration-500`}></div>
                     
-                    <div className="relative p-3 sm:p-4 lg:p-5">
+                    <div className="relative p-2 sm:p-3 lg:p-4 h-full flex flex-col">
                       {/* Icon and Header */}
-                      <div className="text-center mb-3 sm:mb-4 lg:mb-5">
+                      <div className="text-center mb-2 sm:mb-3 lg:mb-4">
                         <div className={`w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 bg-gradient-to-r ${plan.color} rounded-3xl flex items-center justify-center mx-auto mb-2 sm:mb-3 group-hover:scale-110 transition-transform duration-300 shadow-xl`}>
                           <Icon className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 xl:h-7 xl:w-7 text-white" />
                         </div>
                         <h3 className="text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-gray-900 mb-1 sm:mb-2">{plan.name}</h3>
+                        
+                        {/* Price Display */}
+                        <div className="mb-2 sm:mb-3">
+                          <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-900">
+                            {plan.price}
+                          </div>
+                          <div className="text-xs sm:text-sm text-gray-600 font-medium">
+                            per agent/month
+                          </div>
+                        </div>
+                        
                         <p className="text-gray-600 text-xs sm:text-sm leading-relaxed font-medium">{plan.subtitle}</p>
                       </div>
                       
                       {/* Features */}
-                      <ul className="space-y-1 sm:space-y-2 mb-3 sm:mb-4 lg:mb-5">
+                      <ul className="space-y-1 sm:space-y-2 mb-2 sm:mb-3 lg:mb-4 flex-grow">
                         {plan.features.map((feature, featureIndex) => (
                           <li key={featureIndex} className="flex items-start">
                             <CheckCircle className="h-2 w-2 sm:h-3 sm:w-3 lg:h-4 lg:w-4 text-[#00D4AA] mr-2 flex-shrink-0 mt-0.5" />
@@ -189,13 +200,18 @@ const Pricing = () => {
                       </ul>
                       
                       {/* CTA Button */}
-                      <button className={`w-full py-2 sm:py-3 lg:py-4 px-2 sm:px-3 lg:px-4 rounded-2xl font-bold text-xs sm:text-sm lg:text-base transition-all duration-300 hover:scale-105 shadow-lg ${
+                      <a 
+                        href={`https://wa.me/14303074182?text=Hi! I'm interested in the ${plan.name} plan (${plan.price}/agent/month). I'd like to learn more about your real estate support services.`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`w-full py-2 sm:py-3 lg:py-4 px-2 sm:px-3 lg:px-4 rounded-2xl font-bold text-xs sm:text-sm lg:text-base transition-all duration-300 hover:scale-105 shadow-lg mt-auto block text-center ${
                         plan.popular 
                           ? 'bg-gradient-to-r from-[#FF8C42] to-[#ff6b2b] text-white hover:shadow-xl hover:shadow-[#FF8C42]/40' 
                           : 'bg-gradient-to-r from-[#1B8A8A] to-[#00D4AA] text-white hover:shadow-xl hover:shadow-[#1B8A8A]/30'
-                      }`}>
+                      }`}
+                      >
                         Get Started
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>

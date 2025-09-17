@@ -39,13 +39,18 @@ const Hero = () => {
           
           {/* CTA Button - Smaller and more compact */}
           <div className="mb-8 sm:mb-12">
-            <button className="group bg-gradient-to-r from-[#FF8C42] to-[#ff6b2b] text-white px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 rounded-full font-bold text-sm sm:text-base lg:text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-[#FF8C42]/40 hover:scale-105 relative overflow-hidden shadow-xl">
+            <a 
+              href="https://calendly.com/muhammad-nassef-nilesupport/30min?month=2025-09"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-gradient-to-r from-[#FF8C42] to-[#ff6b2b] text-white px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 rounded-full font-bold text-sm sm:text-base lg:text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-[#FF8C42]/40 hover:scale-105 relative overflow-hidden shadow-xl inline-block"
+            >
               <span className="relative z-10 flex items-center justify-center">
                 Get Free Consultation
                 <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 group-hover:translate-x-1 transition-transform duration-300" />
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-[#ff6b2b] to-[#FF8C42] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </button>
+            </a>
           </div>
 
           {/* Compact Stats - Mobile optimized */}

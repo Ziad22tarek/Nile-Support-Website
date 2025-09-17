@@ -82,12 +82,17 @@ const Header = () => {
             </nav>
 
             {/* Consultation Button */}
-            <button className="bg-gradient-to-r from-[#FF8C42] to-[#ff6b2b] text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 hover:shadow-lg hover:shadow-[#FF8C42]/30 hover:scale-105 group">
+            <a 
+              href="https://calendly.com/muhammad-nassef-nilesupport/30min?month=2025-09"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-[#FF8C42] to-[#ff6b2b] text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 hover:shadow-lg hover:shadow-[#FF8C42]/30 hover:scale-105 group inline-block"
+            >
               <span className="flex items-center">
                 Get Free Consultation
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
               </span>
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Button - Updated color */}
