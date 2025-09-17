@@ -5,7 +5,7 @@ const Pricing = () => {
   const plans = [
     {
       name: "Starter",
-      price: "$1280",
+      price: "$1220",
       subtitle: "Solo agents & small teams",
       features: [
         "1-2 agents",
