@@ -55,7 +55,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center text-white/70 hover:text-white transition-colors duration-300">
                 <Phone className="h-3.5 w-3.5 sm:h-4 sm:w-4 mr-2 sm:mr-2.5 flex-shrink-0" />
-                <span className="text-xs sm:text-sm font-medium">+1 (319) 594-3897</span>
+                <span className="text-xs sm:text-sm font-medium">+1 (430) 307-4182</span>
               </div>
               <div className="flex items-center text-white/70 hover:text-white transition-colors duration-300">
                 <MapPin className="h-3.5 w-3.5 sm:h-4 sm:w-4 mr-2 sm:mr-2.5 flex-shrink-0" />
