@@ -5,7 +5,7 @@ const Pricing = () => {
   const plans = [
     {
       name: "Starter",
-      price: "$8",
+      price: "$1280",
       subtitle: "Solo agents & small teams",
       features: [
         "1-2 agents",
@@ -21,7 +21,7 @@ const Pricing = () => {
     },
     {
       name: "Growth",
-      price: "$7.50",
+      price: "$1120",
       subtitle: "Expanding real estate teams",
       features: [
         "3-5 agents",
@@ -38,7 +38,7 @@ const Pricing = () => {
     },
     {
       name: "Scale",
-      price: "$7",
+      price: "$1080",
       subtitle: "Brokerages & high-volume campaigns",
       features: [
         "6-10 agents",
@@ -57,7 +57,7 @@ const Pricing = () => {
     },
     {
       name: "Enterprise",
-      price: "$6.50",
+      price: "$1020",
       subtitle: "Large real estate networks & multi-state operations",
       features: [
         "11+ agents",
@@ -175,6 +175,17 @@ const Pricing = () => {
                           <Icon className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 xl:h-7 xl:w-7 text-white" />
                         </div>
                         <h3 className="text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-gray-900 mb-1 sm:mb-2">{plan.name}</h3>
+                        
+                        {/* Price Display */}
+                        <div className="mb-2 sm:mb-3">
+                          <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-900">
+                            {plan.price}
+                          </div>
+                          <div className="text-xs sm:text-sm text-gray-600 font-medium">
+                            per agent/month
+                          </div>
+                        </div>
+                        
                         <p className="text-gray-600 text-xs sm:text-sm leading-relaxed font-medium">{plan.subtitle}</p>
                       </div>
                       
