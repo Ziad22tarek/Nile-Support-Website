@@ -220,21 +220,26 @@ I'd like to discuss how you can help grow my real estate business!`;
               </p>
               
               <div className="space-y-3">
-                <button className="group w-full bg-gradient-to-r from-[#1B8A8A] to-[#00D4AA] text-white px-6 py-3 rounded-xl font-bold text-base transition-all duration-300 hover:shadow-xl hover:shadow-[#1B8A8A]/40 hover:scale-105 flex items-center justify-center shadow-lg">
+                <a 
+                  href="https://calendly.com/muhammad-nassef-nilesupport/30min?month=2025-09"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group w-full bg-gradient-to-r from-[#1B8A8A] to-[#00D4AA] text-white px-6 py-3 rounded-xl font-bold text-base transition-all duration-300 hover:shadow-xl hover:shadow-[#1B8A8A]/40 hover:scale-105 flex items-center justify-center shadow-lg"
+                >
                   <span className="flex items-center">
                     Schedule a Call
                     <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                   </span>
-                </button>
+                </a>
                 
-                <button className="group w-full border-2 border-white/40 text-white px-6 py-3 rounded-xl font-bold text-base transition-all duration-300 hover:bg-white/15 hover:border-white/60 flex items-center justify-center shadow-lg">
+                {/* <button className="group w-full border-2 border-white/40 text-white px-6 py-3 rounded-xl font-bold text-base transition-all duration-300 hover:bg-white/15 hover:border-white/60 flex items-center justify-center shadow-lg">
                   <span className="flex items-center">
                     Download Brochure
                     <svg className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                   </span>
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
