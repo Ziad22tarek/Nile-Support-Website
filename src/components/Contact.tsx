@@ -94,50 +94,26 @@ I'd like to discuss how you can help grow my real estate business!`;
               </div>
               
               <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="group">
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Full Name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[#00D4AA] focus:bg-white/20 transition-all duration-300 group-hover:border-white/50 text-sm sm:text-base font-medium"
-                    />
-                  </div>
-                  <div className="group">
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Email Address"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[#A4D65E] focus:bg-white/20 transition-all duration-300 group-hover:border-white/50 text-sm sm:text-base font-medium"
-                    />
-                  </div>
+                <div className="group">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[#00D4AA] focus:bg-white/20 transition-all duration-300 group-hover:border-white/50 text-sm sm:text-base font-medium"
+                  />
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="group">
-                    <input
-                      type="tel"
-                      name="phone"
-                      placeholder="Phone Number"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[#00D4AA] focus:bg-white/20 transition-all duration-300 group-hover:border-white/50 text-sm sm:text-base font-medium"
-                    />
-                  </div>
-                  <div className="group">
-                    <input
-                      type="text"
-                      name="company"
-                      placeholder="Company Name"
-                      value={formData.company}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[#00D4AA] focus:bg-white/20 transition-all duration-300 group-hover:border-white/50 text-sm sm:text-base font-medium"
-                    />
-                  </div>
+                <div className="group">
+                  <input
+                    type="text"
+                    name="company"
+                    placeholder="Company Name"
+                    value={formData.company}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[#00D4AA] focus:bg-white/20 transition-all duration-300 group-hover:border-white/50 text-sm sm:text-base font-medium"
+                  />
                 </div>
                 
                 <div className="group">
@@ -185,7 +161,7 @@ I'd like to discuss how you can help grow my real estate business!`;
           {/* Contact Information */}
           <div className="w-full space-y-6">
             <div>
-              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6">Contact Information</h3>
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6">Let's Connect</h3>
               
               <div className="space-y-4">
                 {[
