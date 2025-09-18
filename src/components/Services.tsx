@@ -56,7 +56,11 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="relative min-h-screen overflow-hidden flex items-center py-4 sm:py-6 lg:py-8">
+    <section
+      id="services"
+      className="relative w-full overflow-hidden flex items-center py-6 sm:py-8 lg:py-10
+        min-h-[420px] sm:min-h-[460px] md:min-h-[500px] lg:min-h-[540px]"
+    >
       {/* Darker Background */}
       <div className="absolute inset-0">
         {/* Dark base gradient */}
@@ -100,13 +104,13 @@ const Services = () => {
                 const Icon = service.icon;
                 return (
                   <div key={index} className="group">
-                    <div className="relative bg-gray-800/60 backdrop-blur-md p-4 sm:p-6 rounded-3xl border border-gray-600/40 hover:border-[#1B8A8A]/60 transition-all duration-500 hover:shadow-2xl hover:shadow-[#1B8A8A]/30 hover:-translate-y-2 h-full">
+                    <div className="relative bg-gray-800/60 backdrop-blur-md p-4 sm:p-5 md:p-6 rounded-3xl border border-gray-600/40 hover:border-[#1B8A8A]/60 transition-all duration-400 hover:shadow-2xl hover:shadow-[#1B8A8A]/30 hover:-translate-y-1 h-full">
                       <div className="flex flex-col items-center text-center space-y-3 sm:space-y-4 mb-4">
-                        <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gradient-to-r ${service.color} rounded-3xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-xl`}>
+                        <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gradient-to-r ${service.color} rounded-3xl flex items-center justify-center group-hover:scale-105 transition-all duration-200 shadow-xl`}>
                           <Icon className="h-5 w-5 sm:h-6 sm:w-6 lg:h-7 lg:w-7 text-white" />
                         </div>
                         <div className="flex-1">
-                          <h3 className="text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-white mb-2 group-hover:text-[#00D4AA] transition-colors duration-300">
+                          <h3 className="text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-white mb-2 group-hover:text-[#00D4AA] transition-colors duration-200">
                             {service.title}
                           </h3>
                           <p className="text-xs sm:text-sm lg:text-base text-gray-200 leading-relaxed font-medium">
@@ -114,7 +118,7 @@ const Services = () => {
                           </p>
                         </div>
                       </div>
-                      <div className={`w-full h-1 bg-gradient-to-r ${service.color} rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
+                      <div className={`w-full h-1 bg-gradient-to-r ${service.color} rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200`}></div>
                     </div>
                   </div>
                 );
@@ -129,13 +133,13 @@ const Services = () => {
                   const Icon = service.icon;
                   return (
                     <div className="group">
-                      <div className="relative bg-gray-800/60 backdrop-blur-md p-4 sm:p-6 rounded-3xl border border-gray-600/40 hover:border-[#1B8A8A]/60 transition-all duration-500 hover:shadow-2xl hover:shadow-[#1B8A8A]/30 hover:-translate-y-2 h-full">
+                      <div className="relative bg-gray-800/60 backdrop-blur-md p-4 sm:p-5 md:p-6 rounded-3xl border border-gray-600/40 hover:border-[#1B8A8A]/60 transition-all duration-400 hover:shadow-2xl hover:shadow-[#1B8A8A]/30 hover:-translate-y-1 h-full">
                         <div className="flex flex-col items-center text-center space-y-3 sm:space-y-4 mb-4">
-                          <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gradient-to-r ${service.color} rounded-3xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-xl`}>
+                          <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gradient-to-r ${service.color} rounded-3xl flex items-center justify-center group-hover:scale-105 transition-all duration-200 shadow-xl`}>
                             <Icon className="h-5 w-5 sm:h-6 sm:w-6 lg:h-7 lg:w-7 text-white" />
                           </div>
                           <div className="flex-1">
-                            <h3 className="text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-white mb-2 group-hover:text-[#00D4AA] transition-colors duration-300">
+                            <h3 className="text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-white mb-2 group-hover:text-[#00D4AA] transition-colors duration-200">
                               {service.title}
                             </h3>
                             <p className="text-xs sm:text-sm lg:text-base text-gray-200 leading-relaxed font-medium">
@@ -143,7 +147,7 @@ const Services = () => {
                             </p>
                           </div>
                         </div>
-                        <div className={`w-full h-1 bg-gradient-to-r ${service.color} rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
+                        <div className={`w-full h-1 bg-gradient-to-r ${service.color} rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200`}></div>
                       </div>
                     </div>
                   );
@@ -157,13 +161,13 @@ const Services = () => {
                 const Icon = service.icon;
                 return (
                   <div key={index + 4} className="group">
-                    <div className="relative bg-gray-800/60 backdrop-blur-md p-4 sm:p-6 rounded-3xl border border-gray-600/40 hover:border-[#1B8A8A]/60 transition-all duration-500 hover:shadow-2xl hover:shadow-[#1B8A8A]/30 hover:-translate-y-2 h-full">
+                    <div className="relative bg-gray-800/60 backdrop-blur-md p-4 sm:p-5 md:p-6 rounded-3xl border border-gray-600/40 hover:border-[#1B8A8A]/60 transition-all duration-400 hover:shadow-2xl hover:shadow-[#1B8A8A]/30 hover:-translate-y-1 h-full">
                       <div className="flex flex-col items-center text-center space-y-3 sm:space-y-4 mb-4">
-                        <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gradient-to-r ${service.color} rounded-3xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-xl`}>
+                        <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gradient-to-r ${service.color} rounded-3xl flex items-center justify-center group-hover:scale-105 transition-all duration-200 shadow-xl`}>
                           <Icon className="h-5 w-5 sm:h-6 sm:w-6 lg:h-7 lg:w-7 text-white" />
                         </div>
                         <div className="flex-1">
-                          <h3 className="text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-white mb-2 group-hover:text-[#00D4AA] transition-colors duration-300">
+                          <h3 className="text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-white mb-2 group-hover:text-[#00D4AA] transition-colors duration-200">
                             {service.title}
                           </h3>
                           <p className="text-xs sm:text-sm lg:text-base text-gray-200 leading-relaxed font-medium">
@@ -171,7 +175,7 @@ const Services = () => {
                           </p>
                         </div>
                       </div>
-                      <div className={`w-full h-1 bg-gradient-to-r ${service.color} rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
+                      <div className={`w-full h-1 bg-gradient-to-r ${service.color} rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200`}></div>
                     </div>
                   </div>
                 );
