@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Users, DollarSign, Shield } from 'lucide-react';
+import { MapPin, Users, DollarSign, Shield, Database } from 'lucide-react';
 
 const WhyChooseUs = () => {
   const features = [
@@ -26,6 +26,12 @@ const WhyChooseUs = () => {
       title: "TCPA/DNC Compliance",
       description: "Full regulatory compliance and protection with secure, monitored systems",
       color: "from-[#2C5F7C] to-[#1B8A8A]"
+    },
+    {
+      icon: Database,
+      title: "Off-Market Deals & CRM Integration",
+      description: "Access to exclusive off-market properties and seamless CRM integration for better lead management",
+      color: "from-[#00D4AA] to-[#2C5F7C]"
     }
   ];
 
@@ -92,7 +98,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-5 mb-4 sm:mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4 lg:gap-5 mb-4 sm:mb-6">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
