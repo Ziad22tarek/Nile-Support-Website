@@ -14,7 +14,6 @@ const Services = () => {
       icon: Users,
       title: "Lead List Generation & Selling Lists",
       description: "High-quality, targeted prospect lists and lead management systems that reduce wrong numbers and boost opportunities.",
-      
       color: "from-[#1B8A8A] to-[#2C5F7C]",
       bgColor: "from-[#1B8A8A]/10 to-[#2C5F7C]/10"
     },
@@ -50,7 +49,7 @@ const Services = () => {
       icon: FileText,
       title: "Administrative Support",
       description: "Efficient back-office support and document management to streamline operations and free up your time.",
-       color: "from-[#A4D65E] to-[#FF8C42]",
+      color: "from-[#A4D65E] to-[#FF8C42]",
       bgColor: "from-[#A4D65E]/10 to-[#FF8C42]/10"
     }
   ];
@@ -58,96 +57,95 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="relative w-full overflow-hidden flex items-center py-6 sm:py-8 lg:py-10
-        min-h-[420px] sm:min-h-[460px] md:min-h-[500px] lg:min-h-[540px]"
+      className="relative w-full overflow-hidden flex items-center py-3 sm:py-4 lg:py-6
+        min-h-[240px] sm:min-h-[280px] md:min-h-[300px] lg:min-h-[320px]"
     >
       {/* Darker Background */}
       <div className="absolute inset-0">
         {/* Dark base gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700"></div>
-        
-        {/* Glowing accent circles */}
-        <div className="absolute top-32 right-32 w-96 h-96 bg-gradient-to-br from-[#1B8A8A]/30 to-[#00D4AA]/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-32 left-32 w-80 h-80 bg-gradient-to-br from-[#A4D65E]/25 to-[#FF8C42]/15 rounded-full blur-3xl"></div>
-        
+
+        {/* Glowing accent circles (smaller & closer) */}
+        <div className="absolute top-16 right-12 w-44 h-44 bg-gradient-to-br from-[#1B8A8A]/28 to-[#00D4AA]/16 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-12 left-10 w-36 h-36 bg-gradient-to-br from-[#A4D65E]/22 to-[#FF8C42]/12 rounded-full blur-3xl"></div>
+
         {/* Subtle grid pattern overlay */}
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-8">
           <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.3) 1px, transparent 0)`,
-            backgroundSize: '50px 50px'
+            backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.18) 1px, transparent 0)`,
+            backgroundSize: '46px 46px'
           }}></div>
         </div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-3 sm:px-4 lg:px-6 xl:px-8 w-full">
-        <div className="py-2 sm:py-4 lg:py-6">
-          {/* Header */}
-          <div className="text-center mb-6 sm:mb-8 lg:mb-10">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-3 sm:mb-4 lg:mb-6 leading-tight">
+      <div className="relative z-10 max-w-6xl mx-auto px-3 sm:px-4 lg:px-6 xl:px-8 w-full">
+        <div className="py-1 sm:py-2 lg:py-3">
+          {/* Header (reduced) */}
+          <div className="text-center mb-4 sm:mb-6 lg:mb-8">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-bold text-white mb-2 sm:mb-3 leading-tight">
               Comprehensive Real Estate
               <span className="block bg-gradient-to-r from-[#00D4AA] to-[#A4D65E] bg-clip-text text-transparent">
                 Support Services
               </span>
             </h2>
-            
-            <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed font-medium">
+
+            <p className="text-sm sm:text-sm lg:text-base xl:text-lg text-gray-200 max-w-3xl mx-auto leading-relaxed font-medium">
               Tailored solutions designed specifically for real estate professionals who want to scale their business efficiently
             </p>
           </div>
 
-          {/* Services Grid - 3-1-3 Layout */}
-          <div className="space-y-4 sm:space-y-6 lg:space-y-8">
-            
+          {/* Services Grid - compact */}
+          <div className="space-y-3 sm:space-y-4 lg:space-y-6">
             {/* First row - 3 compact services */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 lg:gap-4">
               {services.slice(0, 3).map((service, index) => {
                 const Icon = service.icon;
                 return (
                   <div key={index} className="group">
-                    <div className="relative bg-gray-800/60 backdrop-blur-md p-4 sm:p-5 md:p-6 rounded-3xl border border-gray-600/40 hover:border-[#1B8A8A]/60 transition-all duration-400 hover:shadow-2xl hover:shadow-[#1B8A8A]/30 hover:-translate-y-1 h-full">
-                      <div className="flex flex-col items-center text-center space-y-3 sm:space-y-4 mb-4">
-                        <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gradient-to-r ${service.color} rounded-3xl flex items-center justify-center group-hover:scale-105 transition-all duration-200 shadow-xl`}>
-                          <Icon className="h-5 w-5 sm:h-6 sm:w-6 lg:h-7 lg:w-7 text-white" />
+                    <div className="relative bg-gray-800/60 backdrop-blur-md p-3 sm:p-4 rounded-2xl border border-gray-600/30 hover:border-[#1B8A8A]/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 h-full">
+                      <div className="flex flex-col items-center text-center space-y-2 mb-2">
+                        <div className={`flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-gradient-to-r ${service.color} rounded-2xl flex items-center justify-center group-hover:scale-105 transition-all duration-200 shadow-md`}>
+                          <Icon className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-white" />
                         </div>
                         <div className="flex-1">
-                          <h3 className="text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-white mb-2 group-hover:text-[#00D4AA] transition-colors duration-200">
+                          <h3 className="text-sm sm:text-sm lg:text-base font-bold text-white mb-1 group-hover:text-[#00D4AA] transition-colors duration-200">
                             {service.title}
                           </h3>
-                          <p className="text-xs sm:text-sm lg:text-base text-gray-200 leading-relaxed font-medium">
+                          <p className="text-xs sm:text-xs lg:text-sm text-gray-200 leading-snug font-medium">
                             {service.description}
                           </p>
                         </div>
                       </div>
-                      <div className={`w-full h-1 bg-gradient-to-r ${service.color} rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200`}></div>
+                      <div className={`w-full h-0.5 bg-gradient-to-r ${service.color} rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200`}></div>
                     </div>
                   </div>
                 );
               })}
             </div>
 
-            {/* Second row - 1 service (centered and wider) */}
+            {/* Second row - 1 service (centered, narrower) */}
             <div className="flex justify-center">
-              <div className="w-full max-w-2xl">
+              <div className="w-full max-w-xl">
                 {(() => {
                   const service = services[3];
                   const Icon = service.icon;
                   return (
                     <div className="group">
-                      <div className="relative bg-gray-800/60 backdrop-blur-md p-4 sm:p-5 md:p-6 rounded-3xl border border-gray-600/40 hover:border-[#1B8A8A]/60 transition-all duration-400 hover:shadow-2xl hover:shadow-[#1B8A8A]/30 hover:-translate-y-1 h-full">
-                        <div className="flex flex-col items-center text-center space-y-3 sm:space-y-4 mb-4">
-                          <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gradient-to-r ${service.color} rounded-3xl flex items-center justify-center group-hover:scale-105 transition-all duration-200 shadow-xl`}>
-                            <Icon className="h-5 w-5 sm:h-6 sm:w-6 lg:h-7 lg:w-7 text-white" />
+                      <div className="relative bg-gray-800/60 backdrop-blur-md p-3 sm:p-4 rounded-2xl border border-gray-600/30 hover:border-[#1B8A8A]/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 h-full">
+                        <div className="flex flex-col items-center text-center space-y-2 mb-2">
+                          <div className={`flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-gradient-to-r ${service.color} rounded-2xl flex items-center justify-center group-hover:scale-105 transition-all duration-200 shadow-md`}>
+                            <Icon className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-white" />
                           </div>
                           <div className="flex-1">
-                            <h3 className="text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-white mb-2 group-hover:text-[#00D4AA] transition-colors duration-200">
+                            <h3 className="text-sm sm:text-sm lg:text-base font-bold text-white mb-1 group-hover:text-[#00D4AA] transition-colors duration-200">
                               {service.title}
                             </h3>
-                            <p className="text-xs sm:text-sm lg:text-base text-gray-200 leading-relaxed font-medium">
+                            <p className="text-xs sm:text-xs lg:text-sm text-gray-200 leading-snug font-medium">
                               {service.description}
                             </p>
                           </div>
                         </div>
-                        <div className={`w-full h-1 bg-gradient-to-r ${service.color} rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200`}></div>
+                        <div className={`w-full h-0.5 bg-gradient-to-r ${service.color} rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200`}></div>
                       </div>
                     </div>
                   );
@@ -156,26 +154,26 @@ const Services = () => {
             </div>
 
             {/* Third row - 3 compact services */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 lg:gap-4">
               {services.slice(4, 7).map((service, index) => {
                 const Icon = service.icon;
                 return (
                   <div key={index + 4} className="group">
-                    <div className="relative bg-gray-800/60 backdrop-blur-md p-4 sm:p-5 md:p-6 rounded-3xl border border-gray-600/40 hover:border-[#1B8A8A]/60 transition-all duration-400 hover:shadow-2xl hover:shadow-[#1B8A8A]/30 hover:-translate-y-1 h-full">
-                      <div className="flex flex-col items-center text-center space-y-3 sm:space-y-4 mb-4">
-                        <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gradient-to-r ${service.color} rounded-3xl flex items-center justify-center group-hover:scale-105 transition-all duration-200 shadow-xl`}>
-                          <Icon className="h-5 w-5 sm:h-6 sm:w-6 lg:h-7 lg:w-7 text-white" />
+                    <div className="relative bg-gray-800/60 backdrop-blur-md p-3 sm:p-4 rounded-2xl border border-gray-600/30 hover:border-[#1B8A8A]/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 h-full">
+                      <div className="flex flex-col items-center text-center space-y-2 mb-2">
+                        <div className={`flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-gradient-to-r ${service.color} rounded-2xl flex items-center justify-center group-hover:scale-105 transition-all duration-200 shadow-md`}>
+                          <Icon className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-white" />
                         </div>
                         <div className="flex-1">
-                          <h3 className="text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-white mb-2 group-hover:text-[#00D4AA] transition-colors duration-200">
+                          <h3 className="text-sm sm:text-sm lg:text-base font-bold text-white mb-1 group-hover:text-[#00D4AA] transition-colors duration-200">
                             {service.title}
                           </h3>
-                          <p className="text-xs sm:text-sm lg:text-base text-gray-200 leading-relaxed font-medium">
+                          <p className="text-xs sm:text-xs lg:text-sm text-gray-200 leading-snug font-medium">
                             {service.description}
                           </p>
                         </div>
                       </div>
-                      <div className={`w-full h-1 bg-gradient-to-r ${service.color} rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200`}></div>
+                      <div className={`w-full h-0.5 bg-gradient-to-r ${service.color} rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200`}></div>
                     </div>
                   </div>
                 );
