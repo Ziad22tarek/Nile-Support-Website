@@ -26,7 +26,7 @@ const Hero = () => {
           
           {/* Main Headline - Significantly reduced sizes */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-            Your Trusted Partner for<br />
+            Your Trusted & Reliable Partner for<br />
             <span className="bg-gradient-to-r from-[#A4D65E] to-[#FF8C42] bg-clip-text text-transparent">
               Real Estate Cold Calling
             </span>
@@ -34,7 +34,7 @@ const Hero = () => {
           
           {/* Subtitle - Reduced size and margin */}
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed max-w-3xl mx-auto font-medium">
-            Professional customer service and lead generation for U.S. real estate professionals
+            Expert Lead Generation & Customer Support for U.S. Real Estate Professionals
           </p>
           
           {/* CTA Button - Smaller and more compact */}
@@ -59,7 +59,7 @@ const Hero = () => {
               { icon: Building2, number: "100+", label: "Clients" },
               { icon: Phone, number: "90K+", label: "Daily Calls" },
               { icon: Target, number: "500+", label: "Daily Hot Leads" },
-              { icon: Handshake, number: "60+", label: "Monthly Closed Deals" },
+              { icon: Handshake, number: "1370", label: "Closed Deals" },
               { icon: Headphones, number: "240+", label: "Agents" }
             ].map((stat, index) => {
               const Icon = stat.icon;

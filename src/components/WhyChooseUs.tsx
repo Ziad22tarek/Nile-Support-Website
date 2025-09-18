@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Users, DollarSign, Shield } from 'lucide-react';
+import { MapPin, Users, DollarSign, Shield, Database } from 'lucide-react';
 
 const WhyChooseUs = () => {
   const features = [
@@ -26,6 +26,12 @@ const WhyChooseUs = () => {
       title: "TCPA/DNC Compliance",
       description: "Full regulatory compliance and protection with secure, monitored systems",
       color: "from-[#2C5F7C] to-[#1B8A8A]"
+    },
+    {
+      icon: Database,
+      title: "Off-Market Deals & CRM Integration",
+      description: "Access to exclusive off-market properties and seamless CRM integration for better lead management",
+      color: "from-[#00D4AA] to-[#2C5F7C]"
     }
   ];
 
@@ -92,7 +98,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-5 mb-4 sm:mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4 lg:gap-5 mb-4 sm:mb-6">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
@@ -117,9 +123,7 @@ const WhyChooseUs = () => {
                   <h3 className="text-xs sm:text-sm lg:text-base font-bold text-gray-900 mb-2 sm:mb-3 group-hover:text-[#1B8A8A] transition-colors duration-300 text-center">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600 text-xs sm:text-xs lg:text-sm leading-relaxed group-hover:text-gray-700 transition-colors duration-300 text-center">
-                    {feature.description}
-                  </p>
+                  
                   
                   {/* Decorative elements */}
                   <div className="absolute top-4 right-4 w-2 h-2 bg-[#00D4AA] rounded-full opacity-60 group-hover:opacity-100 group-hover:scale-150 transition-all duration-300"></div>
