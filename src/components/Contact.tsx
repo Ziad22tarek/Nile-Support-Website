@@ -44,7 +44,7 @@ I'd like to discuss how you can help grow my real estate business!`;
   };
 
   return (
-    <section id="contact" className="relative overflow-hidden py-8 sm:py-12 lg:py-16">
+    <section id="contact" className="relative overflow-hidden py-6 sm:py-8 lg:py-10">
       {/* Dynamic Background */}
       <div className="absolute inset-0">
         {/* Base gradient */}
@@ -79,13 +79,13 @@ I'd like to discuss how you can help grow my real estate business!`;
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
           
           {/* Contact Form */}
           <div className="w-full">
-            <div className="bg-white/15 backdrop-blur-xl rounded-2xl p-6 sm:p-8 border border-white/30 shadow-2xl">
-              <div className="mb-6">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
+            <div className="bg-white/15 backdrop-blur-xl rounded-2xl p-4 sm:p-6 border border-white/30 shadow-2xl">
+              <div className="mb-5">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3">
                   Get Started Today
                 </h2>
                 <p className="text-white/90 text-base sm:text-lg font-medium">
@@ -93,7 +93,7 @@ I'd like to discuss how you can help grow my real estate business!`;
                 </p>
               </div>
               
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-3">
                 <div className="group">
                   <input
                     type="text"
@@ -101,7 +101,7 @@ I'd like to discuss how you can help grow my real estate business!`;
                     placeholder="Full Name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[#00D4AA] focus:bg-white/20 transition-all duration-300 group-hover:border-white/50 text-sm sm:text-base font-medium"
+                    className="w-full px-4 py-2.5 rounded-xl bg-white/15 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[#00D4AA] focus:bg-white/20 transition-all duration-300 group-hover:border-white/50 text-sm sm:text-base font-medium"
                   />
                 </div>
                 
@@ -112,7 +112,7 @@ I'd like to discuss how you can help grow my real estate business!`;
                     placeholder="Company Name"
                     value={formData.company}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[#00D4AA] focus:bg-white/20 transition-all duration-300 group-hover:border-white/50 text-sm sm:text-base font-medium"
+                    className="w-full px-4 py-2.5 rounded-xl bg-white/15 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[#00D4AA] focus:bg-white/20 transition-all duration-300 group-hover:border-white/50 text-sm sm:text-base font-medium"
                   />
                 </div>
                 
@@ -121,7 +121,7 @@ I'd like to discuss how you can help grow my real estate business!`;
                     name="service"
                     value={formData.service}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/30 text-white focus:outline-none focus:border-[#00D4AA] focus:bg-white/20 transition-all duration-300 group-hover:border-white/50 text-sm sm:text-base font-medium"
+                    className="w-full px-4 py-2.5 rounded-xl bg-white/15 border border-white/30 text-white focus:outline-none focus:border-[#00D4AA] focus:bg-white/20 transition-all duration-300 group-hover:border-white/50 text-sm sm:text-base font-medium"
                   >
                     <option value="" className="bg-[#2C5F7C] text-white">Select Service Interest</option>
                     <option value="cold-calling" className="bg-[#2C5F7C] text-white">Cold Calling</option>
@@ -139,13 +139,13 @@ I'd like to discuss how you can help grow my real estate business!`;
                     placeholder="Tell us about your needs..."
                     value={formData.message}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 rounded-xl bg-white/15 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[#00D4AA] focus:bg-white/20 transition-all duration-300 resize-none group-hover:border-white/50 text-sm sm:text-base font-medium"
+                    className="w-full px-4 py-2.5 rounded-xl bg-white/15 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[#00D4AA] focus:bg-white/20 transition-all duration-300 resize-none group-hover:border-white/50 text-sm sm:text-base font-medium"
                   ></textarea>
                 </div>
                 
                 <button
                   type="submit" 
-                  className="group w-full bg-gradient-to-r from-[#FF8C42] to-[#ff6b2b] text-white px-8 py-4 rounded-xl font-bold text-base sm:text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-[#FF8C42]/40 hover:scale-105 relative overflow-hidden shadow-xl"
+                  className="group w-full bg-gradient-to-r from-[#FF8C42] to-[#ff6b2b] text-white px-6 py-3 rounded-xl font-bold text-base sm:text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-[#FF8C42]/40 hover:scale-105 relative overflow-hidden shadow-xl"
                 >
                   <span className="relative z-10 flex items-center justify-center">
                     <Send className="mr-2 h-5 w-5" />
@@ -159,12 +159,12 @@ I'd like to discuss how you can help grow my real estate business!`;
           </div>
 
           {/* Contact Information */}
-          <div className="w-full space-y-6">
+          <div className="w-full space-y-4">
             <div>
-              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6">Let's Connect</h3>
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4">Let's Connect</h3>
               
-              <div className="space-y-4">
-                <div className="group flex items-center p-4 rounded-2xl bg-white/15 backdrop-blur-md border border-white/30 hover:bg-white/20 transition-all duration-300">
+              <div className="space-y-3">
+                <div className="group flex items-center p-3 rounded-2xl bg-white/15 backdrop-blur-md border border-white/30 hover:bg-white/20 transition-all duration-300">
                   <div className="w-12 h-12 bg-gradient-to-r from-[#1B8A8A] to-[#2C5F7C] rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-xl">
                     <Clock className="h-6 w-6 text-white" />
                   </div>
@@ -177,11 +177,11 @@ I'd like to discuss how you can help grow my real estate business!`;
             </div>
 
             {/* CTA Section */}
-            <div className="bg-white/15 backdrop-blur-md rounded-2xl p-6 border border-white/30 shadow-xl">
+            <div className="bg-white/15 backdrop-blur-md rounded-2xl p-4 border border-white/30 shadow-xl">
               <h4 className="text-lg sm:text-xl font-bold text-white mb-3 text-center">
                 Ready to Scale Your Real Estate Business?
               </h4>
-              <p className="text-sm sm:text-base text-white/90 mb-6 leading-relaxed text-center font-medium">
+              <p className="text-sm sm:text-base text-white/90 mb-4 leading-relaxed text-center font-medium">
                 Let's discuss how our specialized real estate support services can help you generate more leads, 
                 improve customer satisfaction, and close more deals.
               </p>
@@ -191,7 +191,7 @@ I'd like to discuss how you can help grow my real estate business!`;
                   href="https://calendly.com/muhammad-nassef-nilesupport/30min?month=2025-09"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group w-full bg-gradient-to-r from-[#1B8A8A] to-[#00D4AA] text-white px-6 py-3 rounded-xl font-bold text-base transition-all duration-300 hover:shadow-xl hover:shadow-[#1B8A8A]/40 hover:scale-105 flex items-center justify-center shadow-lg"
+                  className="group w-full bg-gradient-to-r from-[#1B8A8A] to-[#00D4AA] text-white px-5 py-2.5 rounded-xl font-bold text-base transition-all duration-300 hover:shadow-xl hover:shadow-[#1B8A8A]/40 hover:scale-105 flex items-center justify-center shadow-lg"
                 >
                   <span className="flex items-center">
                     Schedule a Call
