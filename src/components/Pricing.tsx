@@ -13,7 +13,8 @@ const Pricing = () => {
         "Daily KPI reporting",
         "Dedicated Team Leader (shared)",
         "Monthly QA reports",
-        "Priority call lists"
+        "Priority call lists",
+        "Dialer Management Service"
       ],
       popular: false,
       color: "from-[#1B8A8A] to-[#00D4AA]",
@@ -30,7 +31,8 @@ const Pricing = () => {
         "Dedicated Team Leader (shared)",
         "Weekly QA reports",
         "Priority call lists & lead filtering",
-        "Performance tracking & optimization"
+        "Performance tracking & optimization",
+        "Dialer Management Service"
       ],
       popular: true,
       color: "from-[#FF8C42] to-[#1B8A8A]",
@@ -49,7 +51,8 @@ const Pricing = () => {
         "Priority call lists & lead filtering",
         "Performance tracking & optimization",
         "Weekly strategy calls with management",
-        "Custom CRM integration"
+        "Custom CRM integration",
+        "Dialer Management Service"
       ],
       popular: false,
       color: "from-[#00D4AA] to-[#FF8C42]",
@@ -70,7 +73,8 @@ const Pricing = () => {
         "Performance tracking & optimization",
         "Weekly strategy calls with management",
         "Custom CRM integration",
-        "Priority recruiting for scaling"
+        "Priority recruiting for scaling",
+        "Dialer Management Service"
       ],
       popular: false,
       color: "from-[#2C5F7C] to-[#1B8A8A]",
