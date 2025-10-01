@@ -5,7 +5,7 @@ const Pricing = () => {
   const plans = [
     {
       name: "Starter",
-      price: "$1220",
+      price: "$1480",
       subtitle: "Solo agents & small teams",
       features: [
         "1-2 agents",
@@ -21,7 +21,7 @@ const Pricing = () => {
     },
     {
       name: "Growth",
-      price: "$1120",
+      price: "$1350",
       subtitle: "Expanding real estate teams",
       features: [
         "3-5 agents",
@@ -38,7 +38,7 @@ const Pricing = () => {
     },
     {
       name: "Scale",
-      price: "$1080",
+      price: "$1300",
       subtitle: "Brokerages & high-volume campaigns",
       features: [
         "6-10 agents",
@@ -57,7 +57,7 @@ const Pricing = () => {
     },
     {
       name: "Enterprise",
-      price: "$1020",
+      price: "$1250",
       subtitle: "Large real estate networks & multi-state operations",
       features: [
         "11+ agents",
