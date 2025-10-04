@@ -81,29 +81,7 @@ const Story = () => {
             </div>
             
             {/* Co-Founder Highlight */}
-            <div className="bg-white/15 backdrop-blur-md rounded-2xl p-4 sm:p-6 border border-white/30 shadow-lg">
-              <div className="flex flex-col sm:flex-row items-center sm:items-start space-y-3 sm:space-y-0 sm:space-x-4 text-center sm:text-left">
-                <div className="relative flex-shrink-0">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 border-white/30 shadow-md">
-                    <img 
-                      src="/Co-Founder.jpg" 
-                      alt="Anan Khaled - Co-Founder & Head of Operations" 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-gradient-to-r from-[#00D4AA] to-[#1B8A8A] rounded-full flex items-center justify-center shadow-md">
-                    <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
-                  </div>
-                </div>
-                <div>
-                  <h4 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-1">Anan Khaled</h4>
-                  <p className="text-[#A4D65E] font-bold text-sm sm:text-base mb-2">Co-Founder & Head of Operations</p>
-                  <p className="text-gray-200 text-xs sm:text-sm lg:text-base font-medium">
-                    "Leading operations excellence from Egypt with deep market expertise"
-                  </p>
-                </div>
-              </div>
-            </div>
+            
             
             {/* Floating accent (reduced) */}
             <div className="absolute -top-1 -right-1 w-6 h-6 bg-[#A4D65E]/20 rounded-full blur-lg animate-pulse"></div>
