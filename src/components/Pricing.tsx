@@ -5,7 +5,7 @@ const Pricing = () => {
   const plans = [
     {
       name: "Starter",
-      price: "$1480",
+      price: "",
       subtitle: "Solo agents & small teams",
       features: [
         "1-2 agents",
@@ -22,7 +22,7 @@ const Pricing = () => {
     },
     {
       name: "Growth",
-      price: "$1350",
+      price: "",
       subtitle: "Expanding real estate teams",
       features: [
         "3-5 agents",
@@ -40,7 +40,7 @@ const Pricing = () => {
     },
     {
       name: "Scale",
-      price: "$1300",
+      price: "",
       subtitle: "Brokerages & high-volume campaigns",
       features: [
         "6-10 agents",
@@ -60,7 +60,7 @@ const Pricing = () => {
     },
     {
       name: "Enterprise",
-      price: "$1250",
+      price: "",
       subtitle: "Large real estate networks & multi-state operations",
       features: [
         "11+ agents",
@@ -190,7 +190,6 @@ const Pricing = () => {
                             {plan.price}
                           </div>
                           <div className="text-xs sm:text-xs text-gray-600 font-medium">
-                            per agent/month
                           </div>
                         </div>
                         

@@ -28,13 +28,13 @@ const Hero = () => {
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
             Your Trusted & Reliable Partner for<br />
             <span className="bg-gradient-to-r from-[#A4D65E] to-[#FF8C42] bg-clip-text text-transparent">
-              Real Estate Cold Calling
+              Outbound Sales & Lead Generation
             </span>
           </h1>
           
           {/* Subtitle - Reduced size and margin */}
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed max-w-3xl mx-auto font-medium">
-            Expert Lead Generation & Customer Support for U.S. Real Estate Professionals
+            Expert Cold Calling, Appointment Setting & Customer Support for B2B, SaaS, Real Estate, Roofing & Service-Based Businesses
           </p>
           
           {/* CTA Button - Smaller and more compact */}

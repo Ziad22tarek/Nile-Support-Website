@@ -5,7 +5,7 @@ const About = () => {
   const coreServices = [
     {
       icon: Phone,
-      title: "Inbound & Outbound Real Estate Calls"
+      title: "Inbound & Outbound Calls"
     },
     {
       icon: Users,
@@ -69,8 +69,7 @@ const About = () => {
               <div className="mb-6 lg:mb-0">
                 <div className="space-y-4">
                   <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed font-medium">
-                    Nile Support LLC provides outsourced customer service, cold calling, and back-office support for real estate companies in the U.S. We help agents, brokers, and property managers improve communication, generate more leads, and streamline operations.
-                  </p>
+                            Nile Support LLC provides outsourced sales, customer support, and back-office services for B2B, SaaS, real estate, roofing, and service-based companies across the U.S. We help growing businesses improve communication, generate more qualified leads, and streamline their sales and operational workflows.                  </p>
                   
                   <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed font-medium">
                     At Nile Support, we understand that cold calling and lead generation take up valuable time you could be using to show homes, meet clients, and close deals. That's why our trained real estate cold-calling specialists do the heavy lifting for you — reaching out to prospects, qualifying leads, and keeping your pipeline full. With us as your partner, you'll book more appointments, close more deals, and grow your business faster.

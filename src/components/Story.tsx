@@ -45,11 +45,11 @@ const Story = () => {
             </h3>
             
             <p className="text-gray-200 text-sm sm:text-base lg:text-lg leading-relaxed font-medium">
-              Founded by Muhammad Nassef, Nile Support LLC brings together a highly skilled team of English-fluent real estate agents based in Egypt, each seasoned and deeply experienced in the U.S. real estate market.
+              Founded by Muhammad Nassef, Nile Support LLC brings together a highly skilled team of English-fluent agents based in Egypt, each seasoned and deeply experienced in the U.S. market.
             </p>
             
             <p className="text-gray-200 text-sm sm:text-base lg:text-lg leading-relaxed font-medium">
-              Our agents combine industry expertise with cultural understanding, ensuring seamless communication, professionalism, and results that meet the highest standards of American real estate businesses.
+              Our agents combine industry expertise with cultural understanding, ensuring seamless communication, professionalism, and results that meet the highest standards of American businesses.
             </p>
           </div>
 
@@ -74,7 +74,7 @@ const Story = () => {
                   <h4 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-1">Muhammad Nassef</h4>
                   <p className="text-[#00D4AA] font-bold text-sm sm:text-base mb-2">Founder & CEO</p>
                   <p className="text-gray-200 text-xs sm:text-sm lg:text-base font-medium">
-                    "Building bridges between U.S. real estate professionals and world-class talent"
+                    "Building bridges between U.S. professionals and world-class talent"
                   </p>
                 </div>
               </div>
