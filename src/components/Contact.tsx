@@ -179,10 +179,10 @@ I'd like to discuss how you can help grow my real estate business!`;
             {/* CTA Section */}
             <div className="bg-white/15 backdrop-blur-md rounded-2xl p-4 border border-white/30 shadow-xl">
               <h4 className="text-lg sm:text-xl font-bold text-white mb-3 text-center">
-                Ready to Scale Your Real Estate Business?
+                Ready to Scale Your Business?
               </h4>
               <p className="text-sm sm:text-base text-white/90 mb-4 leading-relaxed text-center font-medium">
-                Let's discuss how our specialized real estate support services can help you generate more leads, 
+                Let's discuss how our specialized sales outreach services can help you generate more leads, 
                 improve customer satisfaction, and close more deals.
               </p>
               

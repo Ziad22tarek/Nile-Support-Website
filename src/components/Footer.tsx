@@ -34,8 +34,8 @@ const Footer = () => {
             </div>
             
             <p className="text-white/90 mb-3 sm:mb-4 leading-relaxed text-xs sm:text-sm font-medium text-center sm:text-left">
-              Your trusted partner for real estate cold calling and customer service solutions. 
-              We help real estate professionals scale their business with expert support services.
+              Your trusted partner for outbound sales, lead generation, and customer support solutions. 
+              We help businesses across real estate, home services, SaaS, healthcare, e-commerce, and B2B industries scale efficiently with trained agents, proven processes, and data driven execution.
             </p>
             
            
@@ -59,7 +59,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center text-white/70 hover:text-white transition-colors duration-300">
                 <MapPin className="h-3.5 w-3.5 sm:h-4 sm:w-4 mr-2 sm:mr-2.5 flex-shrink-0" />
-                <span className="text-xs sm:text-sm font-medium">Serving U.S. Real Estate Market</span>
+                <span className="text-xs sm:text-sm font-medium">Serving U.S. Market</span>
               </div>
             </div>
           </div>
